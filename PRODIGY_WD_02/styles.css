@@ -1,0 +1,71 @@
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  /* Set your own background image URL here */
+  background: url('Clock Image.jpg') no-repeat center center fixed;
+  background-size: cover; /* Ensure the image covers the whole background */
+  color: #fff;
+}
+
+.stopwatch-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9); /* Transparent background for content */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 320px;
+}
+
+#display {
+  font-size: 3em;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.buttons button {
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #00aaff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #0088cc;
+}
+
+#laps {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#laps li {
+  padding: 8px;
+  background: #e0f7fa;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: #333;
+}
+
+#laps li:nth-child(odd) {
+  background: #b2ebf2;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #333;
+}
